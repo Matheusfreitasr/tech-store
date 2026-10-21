@@ -20,7 +20,7 @@ A **Tech Store** é uma loja virtual fictícia moderna focada em periféricos e 
 
 ## 🚀 Instruções de Execução
 1. Faça o download ou clone este repositório para o seu computador.
-2. Certifique-se de que os ficheiros `index.html`, `style.css`, `script.js` e a pasta `assets/` (com a imagem do mouse) estão na mesma pasta.
+2. Certifique-se de que os ficheiros `index.html`, `style.css`, `script.js` e a pasta `assets/` estão na mesma pasta.
 3. Dê um duplo clique no ficheiro `index.html` para abri-lo no seu navegador padrão.
 4. Na página da loja, clique no botão **"Simular Compra"**.
 5. Insira a quantidade desejada de cada item nas janelas que irão aparecer.
