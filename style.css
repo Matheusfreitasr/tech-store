@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0f19;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #121826, #0b0f19);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #3b82f6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #60a5fa, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+header h1 i {
+    color: #60a5fa;
+    -webkit-text-fill-color: initial;
+}
+
+header p {
+    font-size: 1em;
+    color: #94a3b8;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 950px;
+    margin: 30px auto;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 35px;
+    background: #121826;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.instructions h2 {
+    color: #e2e8f0;
+    margin-bottom: 8px;
+    font-size: 1.4em;
+}
+
+.instructions h2 i {
+    color: #3b82f6;
+}
+
+.instructions p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #cbd5e1;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #121826;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #3b82f6;
+    box-shadow: 0 12px 28px rgba(59, 130, 246, 0.25);
+}
+
+.image-container {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background-color: #121826;
+    border-bottom: 1px solid #1e293b;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .image-container img {
+    transform: scale(1.06);
+}
+
+.card-content {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card h3 {
+    color: #f8fafc;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card h3 i {
+    color: #8b5cf6;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 0.88em;
+    line-height: 1.45;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.price {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #10b981;
+    text-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
+}
+
+.action-container {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.btn-glow {
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: #ffffff;
+    border: none;
+    padding: 14px 38px;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-glow:hover {
+    background: linear-gradient(135deg, #60a5fa, #8b5cf6);
+    box-shadow: 0 10px 28px rgba(99, 102, 241, 0.6);
+    transform: translateY(-2px) scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121826;
+    color: #64748b;
+    font-size: 0.88em;
+    border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7em;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .instructions {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .instructions h2 {
+        font-size: 1.2em;
+    }
+
+    .instructions p {
+        font-size: 0.88em;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .btn-glow {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 1em;
+        justify-content: center;
+    }
+}
